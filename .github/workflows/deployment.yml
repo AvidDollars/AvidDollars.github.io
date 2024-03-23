@@ -28,7 +28,9 @@ jobs:
     
     steps:
       - name: Show PROD environment
-        run: echo test
+        run: |
+          ls -lA
+    
 
       - name: Checkout
         uses: actions/checkout@v4
