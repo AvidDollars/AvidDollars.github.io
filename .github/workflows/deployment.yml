@@ -3,6 +3,9 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["main"]
+    paths:
+      - app/src/
+      - app/package*
 
   workflow_dispatch:
 
