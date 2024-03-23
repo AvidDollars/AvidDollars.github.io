@@ -29,7 +29,8 @@ jobs:
     steps:
       - name: Show PROD environment
         run: |
-          echo test...
+          echo "HELLO: ${{ vars.HELLO || 'null' }}"
+          ls -lA
 
       - name: Checkout
         uses: actions/checkout@v4
