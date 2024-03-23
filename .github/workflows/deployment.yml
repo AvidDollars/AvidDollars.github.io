@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - app/src/
+      - app/src/**
       - app/package*
 
   workflow_dispatch:
